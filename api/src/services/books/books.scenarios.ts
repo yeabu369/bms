@@ -6,18 +6,14 @@ export const standard = defineScenario<Prisma.BookCreateArgs>({
       data: {
         title: 'String',
         author: 'String',
-        copiesAvailable: 9776229,
-        publishedAt: '2022-04-26T15:21:04Z',
-        updatedAt: '2022-04-26T15:21:04Z',
+        updatedAt: '2022-04-27T02:04:23Z',
       },
     },
     two: {
       data: {
         title: 'String',
         author: 'String',
-        copiesAvailable: 4157302,
-        publishedAt: '2022-04-26T15:21:04Z',
-        updatedAt: '2022-04-26T15:21:04Z',
+        updatedAt: '2022-04-27T02:04:23Z',
       },
     },
   },

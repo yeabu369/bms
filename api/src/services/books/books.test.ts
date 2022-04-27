@@ -25,17 +25,13 @@ describe('books', () => {
       input: {
         title: 'String',
         author: 'String',
-        copiesAvailable: 4781632,
-        publishedAt: '2022-04-26T15:21:04Z',
-        updatedAt: '2022-04-26T15:21:04Z',
+        updatedAt: '2022-04-27T02:04:23Z',
       },
     })
 
     expect(result.title).toEqual('String')
     expect(result.author).toEqual('String')
-    expect(result.copiesAvailable).toEqual(4781632)
-    expect(result.publishedAt).toEqual('2022-04-26T15:21:04Z')
-    expect(result.updatedAt).toEqual('2022-04-26T15:21:04Z')
+    expect(result.updatedAt).toEqual('2022-04-27T02:04:23Z')
   })
 
   scenario('updates a book', async (scenario: StandardScenario) => {

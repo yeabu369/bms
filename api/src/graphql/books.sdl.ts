@@ -4,7 +4,8 @@ export const schema = gql`
     title: String!
     author: String!
     copiesAvailable: Int!
-    publishedAt: DateTime!
+    cover: String
+    publishedAt: DateTime
     createdAt: DateTime!
     updatedAt: DateTime!
   }
@@ -18,13 +19,15 @@ export const schema = gql`
     title: String!
     author: String!
     copiesAvailable: Int!
-    publishedAt: DateTime!
+    cover: String
+    publishedAt: DateTime
   }
 
   input UpdateBookInput {
     title: String
     author: String
     copiesAvailable: Int
+    cover: String
     publishedAt: DateTime
   }
 

@@ -83,6 +83,9 @@ const Book = ({ book }) => {
               <th>Copies available</th>
               <td>{book.copiesAvailable}</td>
             </tr><tr>
+              <th>Cover</th>
+              <td>{book.cover}</td>
+            </tr><tr>
               <th>Published at</th>
               <td>{timeTag(book.publishedAt)}</td>
             </tr><tr>

@@ -14,6 +14,7 @@ export const QUERY = gql`
       title
       author
       copiesAvailable
+      cover
       publishedAt
       createdAt
       updatedAt
@@ -27,6 +28,7 @@ const UPDATE_BOOK_MUTATION = gql`
       title
       author
       copiesAvailable
+      cover
       publishedAt
       createdAt
       updatedAt

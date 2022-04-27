@@ -33,6 +33,9 @@ const BookForm = (props) => {
     
     
   
+    
+    
+  
     props.onSave(data, props?.book?.id)
   }
 
@@ -104,6 +107,24 @@ const BookForm = (props) => {
         <FieldError name="copiesAvailable" className="rw-field-error" />
 
         <Label
+          name="cover"
+          className="rw-label"
+          errorClassName="rw-label rw-label-error"
+        >
+          Cover
+        </Label>
+        
+          <TextField
+            name="cover"
+            defaultValue={props.book?.cover}
+            className="rw-input"
+            errorClassName="rw-input rw-input-error"
+          />
+        
+
+        <FieldError name="cover" className="rw-field-error" />
+
+        <Label
           name="publishedAt"
           className="rw-label"
           errorClassName="rw-label rw-label-error"
@@ -116,7 +137,6 @@ const BookForm = (props) => {
             defaultValue={formatDatetime(props.book?.publishedAt)}
             className="rw-input"
             errorClassName="rw-input rw-input-error"
-            validation={{ required: true }}
           />
         
 

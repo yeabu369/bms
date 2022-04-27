@@ -83,6 +83,7 @@ const BooksList = ({ books }) => {
             <th>Title</th>
             <th>Author</th>
             <th>Copies available</th>
+            <th>Cover</th>
             <th>Published at</th>
             <th>Created at</th>
             <th>Updated at</th>
@@ -96,6 +97,7 @@ const BooksList = ({ books }) => {
               <td>{truncate(book.title)}</td>
               <td>{truncate(book.author)}</td>
               <td>{truncate(book.copiesAvailable)}</td>
+              <td>{truncate(book.cover)}</td>
               <td>{timeTag(book.publishedAt)}</td>
               <td>{timeTag(book.createdAt)}</td>
               <td>{timeTag(book.updatedAt)}</td>

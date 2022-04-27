@@ -9,11 +9,12 @@ generator client {
 }
 
 model Book {
-  id              Int      @id @default(autoincrement())
+  id              Int       @id @default(autoincrement())
   title           String
   author          String
-  copiesAvailable Int
-  publishedAt     DateTime
-  createdAt       DateTime @default(now())
-  updatedAt       DateTime @updatedAt
+  copiesAvailable Int       @default(value: 0)
+  cover           String?
+  publishedAt     DateTime?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
 }

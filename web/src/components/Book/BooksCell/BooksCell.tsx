@@ -12,6 +12,7 @@ export const QUERY = gql`
       title
       author
       copiesAvailable
+      cover
       publishedAt
       createdAt
       updatedAt
