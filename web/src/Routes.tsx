@@ -13,6 +13,10 @@ import BooksLayout from 'src/layouts/BooksLayout'
 const Routes = () => {
   return (
     <Router>
+      <Route path="/login" page={LoginPage} name="login" />
+      <Route path="/signup" page={SignupPage} name="signup" />
+      <Route path="/forgot-password" page={ForgotPasswordPage} name="forgotPassword" />
+      <Route path="/reset-password" page={ResetPasswordPage} name="resetPassword" />
       <Set wrap={BooksLayout}>
         <Route path="/books/new" page={BookNewBookPage} name="newBook" />
         <Route path="/books/{id:Int}/edit" page={BookEditBookPage} name="editBook" />
