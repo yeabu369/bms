@@ -36,11 +36,15 @@ const HomePage = () => {
             type="text"
             id="search"
             onChange={() => {}}
-            placeholder="Search"
+            placeholder="Search | ፈልግ"
             className="px-3 outline-none text-sm w-full h-full"
           />
         </div>
       </nav>
+
+      <section className="flex justify-center border h-screen px-32">
+        <div className="w-full container border"></div>
+      </section>
     </>
   )
 }
